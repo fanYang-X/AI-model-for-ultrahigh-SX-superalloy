@@ -12,7 +12,9 @@ It is the ideal goal in the alloy design field to design a new single crystal (S
 Initial commits:
 
 1. Creep dataset, including pre-trained creep datasets (.csv).  
-2. Pre-trained SaTNC model
+2. Transfer learning
+   "pre-trained" is the Pre-trained SaTNC model weights 
+   SaTNC model and "transform" for the input of SaTNC are provided
 
 ## Usage 
 
