@@ -41,7 +41,7 @@ def train_model(model, criterion, optimizer, scheduler, num_epochs, dataloaders,
                 # statistics
                 running_loss += loss.item() * inputs[0].size(0)
             if state == 'val':
-                scheduler.step(loss)
+                scheduler.step(running_loss)
             epoch_loss = np.sqrt(running_loss / dataset_sizes[state])
             if state == 'train':
                 train_loss.append(epoch_loss)
